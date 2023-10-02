@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "contacts-api"
+version = "0.1.0"
+description = ""
+authors = ["Gerenzeo <124388411+Gerenzeo@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.23.2"
+fastapi = "^0.103.2"
+sqlalchemy = "^2.0.21"
+psycopg2 = "^2.9.8"
+python-multipart = "^0.0.6"
+pytest = "^7.4.2"
+httpx = "^0.25.0"
+redis = "^5.0.1"
+bcrypt = "^4.0.1"
+
+
+[tool.poetry.group.test.dependencies]
+httpx = "^0.25.0"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
